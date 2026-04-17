@@ -132,4 +132,7 @@ dmypy.json
 # Project specific
 data/chroma_db/
 data/app.log
+backend/data/chroma_db/
+backend/data/app.log
+backend/data/
 *.log
