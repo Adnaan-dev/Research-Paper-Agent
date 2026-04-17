@@ -1,0 +1,118 @@
+2026-03-23 23:04:51.725 | INFO     | __main__:<module>:106 - Starting server on 0.0.0.0:8000
+2026-03-23 23:08:29.031 | INFO     | __main__:<module>:106 - Starting server on 0.0.0.0:8000
+2026-03-23 23:10:56.196 | INFO     | __main__:<module>:106 - Starting server on 0.0.0.0:8000
+2026-03-23 23:15:54.559 | INFO     | __main__:<module>:110 - Starting server on 0.0.0.0:8000
+2026-03-23 23:19:26.331 | INFO     | __main__:<module>:110 - Starting server on 0.0.0.0:8000
+2026-03-23 23:24:28.920 | INFO     | __main__:<module>:112 - Starting server on 0.0.0.0:8000
+2026-03-23 23:39:37.655 | INFO     | __main__:<module>:112 - Starting server on 0.0.0.0:8000
+2026-03-27 11:04:49.493 | INFO     | __main__:<module>:112 - Starting server on 0.0.0.0:8000
+2026-03-27 11:06:33.537 | INFO     | routes.search_route:search_papers:60 - [Route /search] Topic: 'cancer'
+2026-03-27 11:06:33.542 | INFO     | agents.coordinator_agent:run_full_pipeline:197 - 
+============================================================
+2026-03-27 11:06:33.545 | INFO     | agents.coordinator_agent:run_full_pipeline:198 - [Coordinator] Compiling + invoking graph for: 'cancer'
+2026-03-27 11:06:33.547 | INFO     | agents.coordinator_agent:run_full_pipeline:199 - [Coordinator] Graph: planner → searcher → reader → insight → indexer → comparison → writer → reviewer → publisher
+2026-03-27 11:06:33.551 | INFO     | agents.coordinator_agent:run_full_pipeline:200 - ============================================================
+2026-03-27 11:06:33.711 | INFO     | services.llm_service:_get_groq_llm:62 - [LLM] Using Groq: llama-3.3-70b-versatile (temp=0.3)
+2026-03-27 11:06:34.258 | INFO     | services.llm_service:_get_groq_llm:62 - [LLM] Using Groq: llama-3.3-70b-versatile (temp=0.3)
+2026-03-27 11:06:34.318 | INFO     | services.llm_service:_get_groq_llm:62 - [LLM] Using Groq: llama-3.3-70b-versatile (temp=0.0)
+2026-03-27 11:06:34.407 | INFO     | services.llm_service:_get_groq_llm:62 - [LLM] Using Groq: llama-3.3-70b-versatile (temp=0.4)
+2026-03-27 11:06:34.468 | INFO     | services.llm_service:_get_groq_llm:62 - [LLM] Using Groq: llama-3.3-70b-versatile (temp=0.5)
+2026-03-27 11:06:34.526 | INFO     | services.llm_service:_get_groq_llm:62 - [LLM] Using Groq: llama-3.3-70b-versatile (temp=0.1)
+2026-03-27 11:06:34.595 | INFO     | services.llm_service:_get_groq_llm:62 - [LLM] Using Groq: llama-3.3-70b-versatile (temp=0.1)
+2026-03-27 11:06:34.653 | INFO     | services.llm_service:_get_groq_llm:62 - [LLM] Using Groq: llama-3.3-70b-versatile (temp=0.4)
+2026-03-27 11:06:34.715 | DEBUG    | agents.graph_state:add_node:124 - [Graph] Node registered: planner
+2026-03-27 11:06:34.715 | DEBUG    | agents.graph_state:add_node:124 - [Graph] Node registered: searcher
+2026-03-27 11:06:34.715 | DEBUG    | agents.graph_state:add_node:124 - [Graph] Node registered: reader
+2026-03-27 11:06:34.716 | DEBUG    | agents.graph_state:add_node:124 - [Graph] Node registered: insight
+2026-03-27 11:06:34.717 | DEBUG    | agents.graph_state:add_node:124 - [Graph] Node registered: indexer
+2026-03-27 11:06:34.717 | DEBUG    | agents.graph_state:add_node:124 - [Graph] Node registered: comparison
+2026-03-27 11:06:34.717 | DEBUG    | agents.graph_state:add_node:124 - [Graph] Node registered: writer
+2026-03-27 11:06:34.717 | DEBUG    | agents.graph_state:add_node:124 - [Graph] Node registered: reviewer
+2026-03-27 11:06:34.718 | DEBUG    | agents.graph_state:add_node:124 - [Graph] Node registered: reviser
+2026-03-27 11:06:34.718 | DEBUG    | agents.graph_state:add_node:124 - [Graph] Node registered: publisher
+2026-03-27 11:06:34.718 | INFO     | agents.graph_state:invoke:164 - [Graph] ── Executing node: planner (step 1)
+2026-03-27 11:06:34.720 | INFO     | agents.planner_agent:run:48 - [PlannerAgent] Decomposing topic: 'cancer'
+2026-03-27 11:06:38.066 | SUCCESS  | agents.planner_agent:run:64 - [PlannerAgent] Generated 5 sub-questions
+2026-03-27 11:06:38.068 | INFO     | agents.graph_state:invoke:164 - [Graph] ── Executing node: searcher (step 2)
+2026-03-27 11:06:38.070 | INFO     | agents.search_agent:run:42 - [SearchAgent] Starting search for: 'cancer'
+2026-03-27 11:06:38.072 | INFO     | services.arxiv_service:search_arxiv:33 - [arXiv] Searching for: 'cancer' (max 2 results)
+2026-03-27 11:06:41.614 | DEBUG    | services.arxiv_service:search_arxiv:59 - [arXiv] Found: AI-Enabled Lung Cancer Prognosis...
+2026-03-27 11:06:41.615 | DEBUG    | services.arxiv_service:search_arxiv:59 - [arXiv] Found: Multi-cancer molecular signatures and their interrelationshi...
+2026-03-27 11:06:41.616 | SUCCESS  | services.arxiv_service:search_arxiv:61 - [arXiv] Retrieved 2 papers
+2026-03-27 11:06:41.619 | INFO     | services.semantic_scholar_service:search_semantic_scholar:36 - [SemanticScholar] Searching: 'cancer' (max 2)
+2026-03-27 11:06:43.776 | DEBUG    | services.semantic_scholar_service:search_semantic_scholar:86 - [SemanticScholar] Found: Global cancer statistics 2022: GLOBOCAN estimates of inciden...
+2026-03-27 11:06:43.777 | DEBUG    | services.semantic_scholar_service:search_semantic_scholar:86 - [SemanticScholar] Found: Global Cancer Statistics 2020: GLOBOCAN Estimates of Inciden...
+2026-03-27 11:06:43.778 | SUCCESS  | services.semantic_scholar_service:search_semantic_scholar:88 - [SemanticScholar] Retrieved 2 papers
+2026-03-27 11:06:43.782 | SUCCESS  | agents.search_agent:run:53 - [SearchAgent] Found 4 unique papers (2 arXiv + 2 Scholar)
+2026-03-27 11:06:43.784 | INFO     | agents.graph_state:invoke:164 - [Graph] ── Executing node: reader (step 3)
+2026-03-27 11:06:43.787 | INFO     | agents.summarizer_agent:run:51 - [SummarizerAgent] Summarising 4 papers...
+2026-03-27 11:06:43.790 | DEBUG    | agents.summarizer_agent:run:54 - [SummarizerAgent] 1/4: AI-Enabled Lung Cancer Prognosis...
+2026-03-27 11:06:45.522 | DEBUG    | agents.summarizer_agent:run:54 - [SummarizerAgent] 2/4: Multi-cancer molecular signatures and their interr...
+2026-03-27 11:06:46.800 | DEBUG    | agents.summarizer_agent:run:54 - [SummarizerAgent] 3/4: Global cancer statistics 2022: GLOBOCAN estimates ...
+2026-03-27 11:06:48.738 | DEBUG    | agents.summarizer_agent:run:54 - [SummarizerAgent] 4/4: Global Cancer Statistics 2020: GLOBOCAN Estimates ...
+2026-03-27 11:06:49.718 | SUCCESS  | agents.summarizer_agent:run:61 - [SummarizerAgent] Done -- 4 summaries generated
+2026-03-27 11:06:49.721 | INFO     | agents.graph_state:invoke:164 - [Graph] ── Executing node: insight (step 4)
+2026-03-27 11:06:49.724 | INFO     | agents.insight_agent:run:67 - [InsightAgent] Extracting insights from 4 papers...
+2026-03-27 11:06:49.725 | DEBUG    | agents.insight_agent:run:70 - [InsightAgent] 1/4: AI-Enabled Lung Cancer Prognosis...
+2026-03-27 11:06:51.358 | DEBUG    | agents.insight_agent:run:70 - [InsightAgent] 2/4: Multi-cancer molecular signatures and their interr...
+2026-03-27 11:06:52.806 | DEBUG    | agents.insight_agent:run:70 - [InsightAgent] 3/4: Global cancer statistics 2022: GLOBOCAN estimates ...
+2026-03-27 11:06:53.822 | DEBUG    | agents.insight_agent:run:70 - [InsightAgent] 4/4: Global Cancer Statistics 2020: GLOBOCAN Estimates ...
+2026-03-27 11:06:54.567 | SUCCESS  | agents.insight_agent:run:77 - [InsightAgent] Done -- insights extracted for 4 papers
+2026-03-27 11:06:54.571 | INFO     | agents.graph_state:invoke:164 - [Graph] ── Executing node: indexer (step 5)
+2026-03-27 11:06:54.576 | DEBUG    | services.text_chunker:chunk_paper:39 - [Chunker] 'AI-Enabled Lung Cancer Prognosis' → 4 chunks
+2026-03-27 11:06:54.578 | DEBUG    | services.text_chunker:chunk_paper:39 - [Chunker] 'Multi-cancer molecular signatures and th' → 4 chunks
+2026-03-27 11:06:54.579 | DEBUG    | services.text_chunker:chunk_paper:39 - [Chunker] 'Global cancer statistics 2022: GLOBOCAN ' → 5 chunks
+2026-03-27 11:06:54.580 | DEBUG    | services.text_chunker:chunk_paper:39 - [Chunker] 'Global Cancer Statistics 2020: GLOBOCAN ' → 5 chunks
+2026-03-27 11:06:54.581 | INFO     | services.text_chunker:chunk_papers:64 - [Chunker] Total chunks across 4 papers: 18
+2026-03-27 11:06:54.628 | INFO     | services.embedding_service:_local_embeddings:41 - [Embeddings] Loading local model: all-MiniLM-L6-v2
+2026-03-27 11:06:54.631 | INFO     | services.embedding_service:_local_embeddings:42 - [Embeddings] First run may download ~90 MB — please wait...
+2026-03-27 11:07:45.024 | SUCCESS  | services.embedding_service:_local_embeddings:49 - [Embeddings] Local embedding model ready ✓
+2026-03-27 11:07:45.102 | INFO     | services.vector_store:add_chunks_to_store:92 - [VectorStore] Adding 18 new chunks to ChromaDB...
+2026-03-27 11:07:53.054 | SUCCESS  | services.vector_store:add_chunks_to_store:94 - [VectorStore] ✓ Stored 18 chunks
+2026-03-27 11:07:53.056 | INFO     | agents.coordinator_agent:node_indexer:92 - [Indexer] 18 new chunks stored in ChromaDB
+2026-03-27 11:07:53.058 | INFO     | agents.graph_state:invoke:164 - [Graph] ── Executing node: comparison (step 6)
+2026-03-27 11:07:53.060 | INFO     | agents.comparison_agent:run:54 - [ComparisonAgent] Comparing 4 papers on 'cancer'
+2026-03-27 11:07:56.374 | SUCCESS  | agents.comparison_agent:run:64 - [ComparisonAgent] Comparison generated
+2026-03-27 11:07:56.376 | INFO     | agents.graph_state:invoke:164 - [Graph] ── Executing node: writer (step 7)
+2026-03-27 11:07:56.378 | INFO     | agents.literature_agent:run:119 - [LiteratureAgent] Writing review for 'cancer' (4 papers)...
+2026-03-27 11:07:57.335 | SUCCESS  | agents.literature_agent:_generate_table:178 - [LiteratureAgent] Comparison table generated
+2026-03-27 11:08:02.961 | SUCCESS  | agents.literature_agent:run:143 - [LiteratureAgent] Draft generated (9896 chars)
+2026-03-27 11:08:02.964 | INFO     | agents.graph_state:invoke:164 - [Graph] ── Executing node: reviewer (step 8)
+2026-03-27 11:08:02.966 | INFO     | agents.reviewer_agent:run:79 - [ReviewerAgent] Reviewing draft (9896 chars)...
+2026-03-27 11:08:06.599 | INFO     | agents.reviewer_agent:run:108 - [ReviewerAgent] Score: 5/10 | Passed: False
+2026-03-27 11:08:06.601 | DEBUG    | agents.graph_state:invoke:180 - [Graph] Conditional edge: reviewer → reviser (key=fail)
+2026-03-27 11:08:06.602 | INFO     | agents.graph_state:invoke:164 - [Graph] ── Executing node: reviser (step 9)
+2026-03-27 11:08:06.604 | INFO     | agents.reviser_agent:run:69 - [ReviserAgent] Revision #1 based on feedback...
+2026-03-27 11:08:11.818 | SUCCESS  | agents.reviser_agent:run:81 - [ReviserAgent] Revision #1 complete (8536 chars)
+2026-03-27 11:08:11.821 | INFO     | agents.graph_state:invoke:164 - [Graph] ── Executing node: writer (step 10)
+2026-03-27 11:08:11.824 | INFO     | agents.literature_agent:run:119 - [LiteratureAgent] Writing review for 'cancer' (4 papers)...
+2026-03-27 11:08:12.959 | SUCCESS  | agents.literature_agent:_generate_table:178 - [LiteratureAgent] Comparison table generated
+2026-03-27 11:08:18.157 | SUCCESS  | agents.literature_agent:run:143 - [LiteratureAgent] Draft generated (9657 chars)
+2026-03-27 11:08:18.160 | INFO     | agents.graph_state:invoke:164 - [Graph] ── Executing node: reviewer (step 11)
+2026-03-27 11:08:18.163 | INFO     | agents.reviewer_agent:run:79 - [ReviewerAgent] Reviewing draft (9657 chars)...
+2026-03-27 11:08:28.756 | INFO     | agents.reviewer_agent:run:108 - [ReviewerAgent] Score: 4/10 | Passed: False
+2026-03-27 11:08:28.759 | DEBUG    | agents.graph_state:invoke:180 - [Graph] Conditional edge: reviewer → reviser (key=fail)
+2026-03-27 11:08:28.760 | INFO     | agents.graph_state:invoke:164 - [Graph] ── Executing node: reviser (step 12)
+2026-03-27 11:08:28.762 | INFO     | agents.reviser_agent:run:69 - [ReviserAgent] Revision #2 based on feedback...
+2026-03-27 11:08:40.573 | SUCCESS  | agents.reviser_agent:run:81 - [ReviserAgent] Revision #2 complete (9030 chars)
+2026-03-27 11:08:40.576 | INFO     | agents.graph_state:invoke:164 - [Graph] ── Executing node: writer (step 13)
+2026-03-27 11:08:40.578 | INFO     | agents.literature_agent:run:119 - [LiteratureAgent] Writing review for 'cancer' (4 papers)...
+2026-03-27 11:08:49.837 | SUCCESS  | agents.literature_agent:_generate_table:178 - [LiteratureAgent] Comparison table generated
+2026-03-27 11:09:07.020 | SUCCESS  | agents.literature_agent:run:143 - [LiteratureAgent] Draft generated (9145 chars)
+2026-03-27 11:09:07.021 | INFO     | agents.graph_state:invoke:164 - [Graph] ── Executing node: reviewer (step 14)
+2026-03-27 11:09:07.022 | INFO     | agents.reviewer_agent:run:79 - [ReviewerAgent] Reviewing draft (9145 chars)...
+2026-03-27 11:09:19.018 | INFO     | agents.reviewer_agent:run:108 - [ReviewerAgent] Score: 4/10 | Passed: False
+2026-03-27 11:09:19.020 | WARNING  | agents.coordinator_agent:reviewer_decision:127 - [Graph] Max revisions (2) reached — publishing anyway
+2026-03-27 11:09:19.022 | DEBUG    | agents.graph_state:invoke:180 - [Graph] Conditional edge: reviewer → publisher (key=pass)
+2026-03-27 11:09:19.025 | INFO     | agents.graph_state:invoke:164 - [Graph] ── Executing node: publisher (step 15)
+2026-03-27 11:09:19.079 | SUCCESS  | agents.coordinator_agent:node_publisher:114 - [Publisher] Pipeline complete — review finalized
+2026-03-27 11:09:19.082 | INFO     | agents.graph_state:invoke:158 - [Graph] Reached END after 15 steps
+2026-03-27 11:09:19.083 | SUCCESS  | agents.coordinator_agent:run_full_pipeline:225 - [Coordinator] Graph complete. Nodes executed: planner → searcher → reader → insight → indexer → comparison → writer → reviewer → reviser → writer → reviewer → reviser → writer → reviewer → publisher. Revisions: 2.
+2026-03-27 11:10:28.343 | INFO     | routes.query_route:query_papers:64 - [Route /query] Question: 'who is james watson'
+2026-03-27 11:10:28.346 | INFO     | services.llm_service:_get_groq_llm:62 - [LLM] Using Groq: llama-3.3-70b-versatile (temp=0.2)
+2026-03-27 11:10:28.491 | INFO     | agents.coordinator_agent:run_qa:250 - [Coordinator] QA: 'who is james watson'
+2026-03-27 11:10:28.493 | INFO     | services.llm_service:_get_groq_llm:62 - [LLM] Using Groq: llama-3.3-70b-versatile (temp=0.2)
+2026-03-27 11:10:28.601 | INFO     | agents.qa_agent:run:56 - [QAAgent] Question: 'who is james watson'
+2026-03-27 11:10:28.726 | DEBUG    | services.vector_store:similarity_search:119 - [VectorStore] Retrieved 5 chunks for: 'who is james watson'
+2026-03-27 11:10:31.943 | SUCCESS  | agents.qa_agent:run:75 - [QAAgent] Answer generated
+2026-04-17 11:34:23.361 | INFO     | __main__:<module>:112 - Starting server on 0.0.0.0:8000

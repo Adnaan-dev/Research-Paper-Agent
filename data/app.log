@@ -1,0 +1,453 @@
+2026-03-23 23:01:07.986 | INFO     | __main__:<module>:106 - Starting server on 0.0.0.0:8000
+2026-03-23 23:06:46.332 | INFO     | routes.search_route:search_papers:60 - [Route /search] Topic: 'wound image segmentation'
+2026-03-23 23:06:46.335 | INFO     | agents.coordinator_agent:run_full_pipeline:197 - 
+============================================================
+2026-03-23 23:06:46.336 | INFO     | agents.coordinator_agent:run_full_pipeline:198 - [Coordinator] Compiling + invoking graph for: 'wound image segmentation'
+2026-03-23 23:06:46.337 | INFO     | agents.coordinator_agent:run_full_pipeline:199 - [Coordinator] Graph: planner → searcher → reader → insight → indexer → comparison → writer → reviewer → publisher
+2026-03-23 23:06:46.342 | INFO     | agents.coordinator_agent:run_full_pipeline:200 - ============================================================
+2026-03-23 23:06:46.392 | ERROR    | routes.search_route:search_papers:88 - [Route /search] Error:
+Traceback (most recent call last):
+  File "c:\Users\ask\Downloads\research-paper-agent-final\research-paper-agent\backend\routes\search_route.py", line 67, in search_papers
+    result = await loop.run_in_executor(_executor, _run)
+  File "C:\Users\ask\AppData\Local\Programs\Python\Python310\lib\concurrent\futures\thread.py", line 58, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "c:\Users\ask\Downloads\research-paper-agent-final\research-paper-agent\backend\routes\search_route.py", line 63, in _run
+    return coordinator.run_full_pipeline(request.topic, request.max_papers)
+  File "c:\Users\ask\Downloads\research-paper-agent-final\research-paper-agent\backend\agents\coordinator_agent.py", line 205, in run_full_pipeline
+    self._get_planner(),
+  File "c:\Users\ask\Downloads\research-paper-agent-final\research-paper-agent\backend\agents\coordinator_agent.py", line 261, in _get_planner
+    self._planner = PlannerAgent()
+  File "c:\Users\ask\Downloads\research-paper-agent-final\research-paper-agent\backend\agents\planner_agent.py", line 42, in __init__
+    self.llm = get_llm(temperature=0.3, max_tokens=400)
+  File "c:\Users\ask\Downloads\research-paper-agent-final\research-paper-agent\backend\services\llm_service.py", line 37, in get_llm
+    return _get_groq_llm(temperature, max_tokens)
+  File "c:\Users\ask\Downloads\research-paper-agent-final\research-paper-agent\backend\services\llm_service.py", line 48, in _get_groq_llm
+    raise ValueError(
+ValueError: GROQ_API_KEY is not set in your .env file!
+Get a FREE key at https://console.groq.com
+Then add: GROQ_API_KEY=gsk_your_key_here
+
+2026-03-23 23:09:09.328 | INFO     | routes.search_route:search_papers:60 - [Route /search] Topic: 'Wound Image Segmentation'
+2026-03-23 23:09:09.330 | INFO     | agents.coordinator_agent:run_full_pipeline:197 - 
+============================================================
+2026-03-23 23:09:09.331 | INFO     | agents.coordinator_agent:run_full_pipeline:198 - [Coordinator] Compiling + invoking graph for: 'Wound Image Segmentation'
+2026-03-23 23:09:09.332 | INFO     | agents.coordinator_agent:run_full_pipeline:199 - [Coordinator] Graph: planner → searcher → reader → insight → indexer → comparison → writer → reviewer → publisher
+2026-03-23 23:09:09.333 | INFO     | agents.coordinator_agent:run_full_pipeline:200 - ============================================================
+2026-03-23 23:09:09.336 | ERROR    | routes.search_route:search_papers:88 - [Route /search] Error:
+Traceback (most recent call last):
+  File "c:\Users\ask\Downloads\research-paper-agent-final\research-paper-agent\backend\routes\search_route.py", line 67, in search_papers
+    result = await loop.run_in_executor(_executor, _run)
+  File "C:\Users\ask\AppData\Local\Programs\Python\Python310\lib\concurrent\futures\thread.py", line 58, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "c:\Users\ask\Downloads\research-paper-agent-final\research-paper-agent\backend\routes\search_route.py", line 63, in _run
+    return coordinator.run_full_pipeline(request.topic, request.max_papers)
+  File "c:\Users\ask\Downloads\research-paper-agent-final\research-paper-agent\backend\agents\coordinator_agent.py", line 205, in run_full_pipeline
+    self._get_planner(),
+  File "c:\Users\ask\Downloads\research-paper-agent-final\research-paper-agent\backend\agents\coordinator_agent.py", line 261, in _get_planner
+    self._planner = PlannerAgent()
+  File "c:\Users\ask\Downloads\research-paper-agent-final\research-paper-agent\backend\agents\planner_agent.py", line 42, in __init__
+    self.llm = get_llm(temperature=0.3, max_tokens=400)
+  File "c:\Users\ask\Downloads\research-paper-agent-final\research-paper-agent\backend\services\llm_service.py", line 37, in get_llm
+    return _get_groq_llm(temperature, max_tokens)
+  File "c:\Users\ask\Downloads\research-paper-agent-final\research-paper-agent\backend\services\llm_service.py", line 48, in _get_groq_llm
+    raise ValueError(
+ValueError: GROQ_API_KEY is not set in your .env file!
+Get a FREE key at https://console.groq.com
+Then add: GROQ_API_KEY=gsk_your_key_here
+
+2026-03-23 23:11:50.133 | INFO     | routes.search_route:search_papers:60 - [Route /search] Topic: 'Wound Image Segementation'
+2026-03-23 23:11:50.134 | INFO     | agents.coordinator_agent:run_full_pipeline:197 - 
+============================================================
+2026-03-23 23:11:50.135 | INFO     | agents.coordinator_agent:run_full_pipeline:198 - [Coordinator] Compiling + invoking graph for: 'Wound Image Segementation'
+2026-03-23 23:11:50.136 | INFO     | agents.coordinator_agent:run_full_pipeline:199 - [Coordinator] Graph: planner → searcher → reader → insight → indexer → comparison → writer → reviewer → publisher
+2026-03-23 23:11:50.138 | INFO     | agents.coordinator_agent:run_full_pipeline:200 - ============================================================
+2026-03-23 23:11:50.141 | ERROR    | routes.search_route:search_papers:88 - [Route /search] Error:
+Traceback (most recent call last):
+  File "c:\Users\ask\Downloads\research-paper-agent-final\research-paper-agent\backend\routes\search_route.py", line 67, in search_papers
+    result = await loop.run_in_executor(_executor, _run)
+  File "C:\Users\ask\AppData\Local\Programs\Python\Python310\lib\concurrent\futures\thread.py", line 58, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "c:\Users\ask\Downloads\research-paper-agent-final\research-paper-agent\backend\routes\search_route.py", line 63, in _run
+    return coordinator.run_full_pipeline(request.topic, request.max_papers)
+  File "c:\Users\ask\Downloads\research-paper-agent-final\research-paper-agent\backend\agents\coordinator_agent.py", line 205, in run_full_pipeline
+    self._get_planner(),
+  File "c:\Users\ask\Downloads\research-paper-agent-final\research-paper-agent\backend\agents\coordinator_agent.py", line 261, in _get_planner
+    self._planner = PlannerAgent()
+  File "c:\Users\ask\Downloads\research-paper-agent-final\research-paper-agent\backend\agents\planner_agent.py", line 42, in __init__
+    self.llm = get_llm(temperature=0.3, max_tokens=400)
+  File "c:\Users\ask\Downloads\research-paper-agent-final\research-paper-agent\backend\services\llm_service.py", line 37, in get_llm
+    return _get_groq_llm(temperature, max_tokens)
+  File "c:\Users\ask\Downloads\research-paper-agent-final\research-paper-agent\backend\services\llm_service.py", line 48, in _get_groq_llm
+    raise ValueError(
+ValueError: GROQ_API_KEY is not set in your .env file!
+Get a FREE key at https://console.groq.com
+Then add: GROQ_API_KEY=gsk_your_key_here
+
+2026-03-23 23:17:11.501 | INFO     | routes.search_route:search_papers:60 - [Route /search] Topic: 'Wound Image Segmentation'
+2026-03-23 23:17:11.503 | INFO     | agents.coordinator_agent:run_full_pipeline:197 - 
+============================================================
+2026-03-23 23:17:11.503 | INFO     | agents.coordinator_agent:run_full_pipeline:198 - [Coordinator] Compiling + invoking graph for: 'Wound Image Segmentation'
+2026-03-23 23:17:11.503 | INFO     | agents.coordinator_agent:run_full_pipeline:199 - [Coordinator] Graph: planner → searcher → reader → insight → indexer → comparison → writer → reviewer → publisher
+2026-03-23 23:17:11.505 | INFO     | agents.coordinator_agent:run_full_pipeline:200 - ============================================================
+2026-03-23 23:17:11.508 | ERROR    | routes.search_route:search_papers:88 - [Route /search] Error:
+Traceback (most recent call last):
+  File "c:\Users\ask\Downloads\research-paper-agent-final\research-paper-agent\backend\routes\search_route.py", line 67, in search_papers
+    result = await loop.run_in_executor(_executor, _run)
+  File "C:\Users\ask\AppData\Local\Programs\Python\Python310\lib\concurrent\futures\thread.py", line 58, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "c:\Users\ask\Downloads\research-paper-agent-final\research-paper-agent\backend\routes\search_route.py", line 63, in _run
+    return coordinator.run_full_pipeline(request.topic, request.max_papers)
+  File "c:\Users\ask\Downloads\research-paper-agent-final\research-paper-agent\backend\agents\coordinator_agent.py", line 205, in run_full_pipeline
+    self._get_planner(),
+  File "c:\Users\ask\Downloads\research-paper-agent-final\research-paper-agent\backend\agents\coordinator_agent.py", line 261, in _get_planner
+    self._planner = PlannerAgent()
+  File "c:\Users\ask\Downloads\research-paper-agent-final\research-paper-agent\backend\agents\planner_agent.py", line 42, in __init__
+    self.llm = get_llm(temperature=0.3, max_tokens=400)
+  File "c:\Users\ask\Downloads\research-paper-agent-final\research-paper-agent\backend\services\llm_service.py", line 37, in get_llm
+    return _get_groq_llm(temperature, max_tokens)
+  File "c:\Users\ask\Downloads\research-paper-agent-final\research-paper-agent\backend\services\llm_service.py", line 48, in _get_groq_llm
+    raise ValueError(
+ValueError: GROQ_API_KEY is not set in your .env file!
+Get a FREE key at https://console.groq.com
+Then add: GROQ_API_KEY=gsk_your_key_here
+
+2026-03-23 23:19:57.316 | INFO     | routes.search_route:search_papers:60 - [Route /search] Topic: 'Wound Image Segmentation'
+2026-03-23 23:19:57.317 | INFO     | agents.coordinator_agent:run_full_pipeline:197 - 
+============================================================
+2026-03-23 23:19:57.317 | INFO     | agents.coordinator_agent:run_full_pipeline:198 - [Coordinator] Compiling + invoking graph for: 'Wound Image Segmentation'
+2026-03-23 23:19:57.318 | INFO     | agents.coordinator_agent:run_full_pipeline:199 - [Coordinator] Graph: planner → searcher → reader → insight → indexer → comparison → writer → reviewer → publisher
+2026-03-23 23:19:57.319 | INFO     | agents.coordinator_agent:run_full_pipeline:200 - ============================================================
+2026-03-23 23:19:57.321 | ERROR    | routes.search_route:search_papers:88 - [Route /search] Error:
+Traceback (most recent call last):
+  File "c:\Users\ask\Downloads\research-paper-agent-final\research-paper-agent\backend\routes\search_route.py", line 67, in search_papers
+    result = await loop.run_in_executor(_executor, _run)
+  File "C:\Users\ask\AppData\Local\Programs\Python\Python310\lib\concurrent\futures\thread.py", line 58, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "c:\Users\ask\Downloads\research-paper-agent-final\research-paper-agent\backend\routes\search_route.py", line 63, in _run
+    return coordinator.run_full_pipeline(request.topic, request.max_papers)
+  File "c:\Users\ask\Downloads\research-paper-agent-final\research-paper-agent\backend\agents\coordinator_agent.py", line 205, in run_full_pipeline
+    self._get_planner(),
+  File "c:\Users\ask\Downloads\research-paper-agent-final\research-paper-agent\backend\agents\coordinator_agent.py", line 261, in _get_planner
+    self._planner = PlannerAgent()
+  File "c:\Users\ask\Downloads\research-paper-agent-final\research-paper-agent\backend\agents\planner_agent.py", line 42, in __init__
+    self.llm = get_llm(temperature=0.3, max_tokens=400)
+  File "c:\Users\ask\Downloads\research-paper-agent-final\research-paper-agent\backend\services\llm_service.py", line 37, in get_llm
+    return _get_groq_llm(temperature, max_tokens)
+  File "c:\Users\ask\Downloads\research-paper-agent-final\research-paper-agent\backend\services\llm_service.py", line 48, in _get_groq_llm
+    raise ValueError(
+ValueError: GROQ_API_KEY is not set in your .env file!
+Get a FREE key at https://console.groq.com
+Then add: GROQ_API_KEY=gsk_your_key_here
+
+2026-03-23 23:25:10.704 | INFO     | routes.search_route:search_papers:60 - [Route /search] Topic: 'Wound Image Segmentation'
+2026-03-23 23:25:10.708 | INFO     | agents.coordinator_agent:run_full_pipeline:197 - 
+============================================================
+2026-03-23 23:25:10.709 | INFO     | agents.coordinator_agent:run_full_pipeline:198 - [Coordinator] Compiling + invoking graph for: 'Wound Image Segmentation'
+2026-03-23 23:25:10.709 | INFO     | agents.coordinator_agent:run_full_pipeline:199 - [Coordinator] Graph: planner → searcher → reader → insight → indexer → comparison → writer → reviewer → publisher
+2026-03-23 23:25:10.710 | INFO     | agents.coordinator_agent:run_full_pipeline:200 - ============================================================
+2026-03-23 23:25:10.774 | INFO     | services.llm_service:_get_groq_llm:62 - [LLM] Using Groq: llama-3.3-70b-versatile (temp=0.3)
+2026-03-23 23:25:11.021 | INFO     | services.llm_service:_get_groq_llm:62 - [LLM] Using Groq: llama-3.3-70b-versatile (temp=0.3)
+2026-03-23 23:25:11.058 | INFO     | services.llm_service:_get_groq_llm:62 - [LLM] Using Groq: llama-3.3-70b-versatile (temp=0.0)
+2026-03-23 23:25:11.091 | INFO     | services.llm_service:_get_groq_llm:62 - [LLM] Using Groq: llama-3.3-70b-versatile (temp=0.4)
+2026-03-23 23:25:11.129 | INFO     | services.llm_service:_get_groq_llm:62 - [LLM] Using Groq: llama-3.3-70b-versatile (temp=0.5)
+2026-03-23 23:25:11.175 | INFO     | services.llm_service:_get_groq_llm:62 - [LLM] Using Groq: llama-3.3-70b-versatile (temp=0.1)
+2026-03-23 23:25:11.226 | INFO     | services.llm_service:_get_groq_llm:62 - [LLM] Using Groq: llama-3.3-70b-versatile (temp=0.1)
+2026-03-23 23:25:11.267 | INFO     | services.llm_service:_get_groq_llm:62 - [LLM] Using Groq: llama-3.3-70b-versatile (temp=0.4)
+2026-03-23 23:25:11.309 | DEBUG    | agents.graph_state:add_node:124 - [Graph] Node registered: planner
+2026-03-23 23:25:11.309 | DEBUG    | agents.graph_state:add_node:124 - [Graph] Node registered: searcher
+2026-03-23 23:25:11.309 | DEBUG    | agents.graph_state:add_node:124 - [Graph] Node registered: reader
+2026-03-23 23:25:11.309 | DEBUG    | agents.graph_state:add_node:124 - [Graph] Node registered: insight
+2026-03-23 23:25:11.309 | DEBUG    | agents.graph_state:add_node:124 - [Graph] Node registered: indexer
+2026-03-23 23:25:11.310 | DEBUG    | agents.graph_state:add_node:124 - [Graph] Node registered: comparison
+2026-03-23 23:25:11.310 | DEBUG    | agents.graph_state:add_node:124 - [Graph] Node registered: writer
+2026-03-23 23:25:11.310 | DEBUG    | agents.graph_state:add_node:124 - [Graph] Node registered: reviewer
+2026-03-23 23:25:11.310 | DEBUG    | agents.graph_state:add_node:124 - [Graph] Node registered: reviser
+2026-03-23 23:25:11.310 | DEBUG    | agents.graph_state:add_node:124 - [Graph] Node registered: publisher
+2026-03-23 23:25:11.310 | INFO     | agents.graph_state:invoke:164 - [Graph] ── Executing node: planner (step 1)
+2026-03-23 23:25:11.311 | INFO     | agents.planner_agent:run:48 - [PlannerAgent] Decomposing topic: 'Wound Image Segmentation'
+2026-03-23 23:25:13.219 | SUCCESS  | agents.planner_agent:run:64 - [PlannerAgent] Generated 5 sub-questions
+2026-03-23 23:25:13.219 | INFO     | agents.graph_state:invoke:164 - [Graph] ── Executing node: searcher (step 2)
+2026-03-23 23:25:13.219 | INFO     | agents.search_agent:run:42 - [SearchAgent] Starting search for: 'Wound Image Segmentation'
+2026-03-23 23:25:13.219 | INFO     | services.arxiv_service:search_arxiv:33 - [arXiv] Searching for: 'Wound Image Segmentation' (max 3 results)
+2026-03-23 23:25:16.597 | DEBUG    | services.arxiv_service:search_arxiv:59 - [arXiv] Found: The application of collagen in advanced wound dressings...
+2026-03-23 23:25:16.598 | DEBUG    | services.arxiv_service:search_arxiv:59 - [arXiv] Found: Robust Image Segmentation in Low Depth Of Field Images...
+2026-03-23 23:25:16.598 | DEBUG    | services.arxiv_service:search_arxiv:59 - [arXiv] Found: Image Segmentation in Foundation Model Era: A Survey...
+2026-03-23 23:25:16.599 | SUCCESS  | services.arxiv_service:search_arxiv:61 - [arXiv] Retrieved 3 papers
+2026-03-23 23:25:16.601 | INFO     | services.semantic_scholar_service:search_semantic_scholar:36 - [SemanticScholar] Searching: 'Wound Image Segmentation' (max 3)
+2026-03-23 23:25:19.373 | DEBUG    | services.semantic_scholar_service:search_semantic_scholar:86 - [SemanticScholar] Found: Wound Image Segmentation Method Based on Fuzzy Clustering Al...
+2026-03-23 23:25:19.374 | DEBUG    | services.semantic_scholar_service:search_semantic_scholar:86 - [SemanticScholar] Found: Improved Skin Wound Image Segmentation Based on CE-Net...
+2026-03-23 23:25:19.375 | DEBUG    | services.semantic_scholar_service:search_semantic_scholar:86 - [SemanticScholar] Found: Assessing the Trade-Off Between Model Behavior and Performan...
+2026-03-23 23:25:19.376 | SUCCESS  | services.semantic_scholar_service:search_semantic_scholar:88 - [SemanticScholar] Retrieved 3 papers
+2026-03-23 23:25:19.377 | SUCCESS  | agents.search_agent:run:53 - [SearchAgent] Found 6 unique papers (3 arXiv + 3 Scholar)
+2026-03-23 23:25:19.378 | INFO     | agents.graph_state:invoke:164 - [Graph] ── Executing node: reader (step 3)
+2026-03-23 23:25:19.379 | INFO     | agents.summarizer_agent:run:51 - [SummarizerAgent] Summarising 6 papers...
+2026-03-23 23:25:19.380 | DEBUG    | agents.summarizer_agent:run:54 - [SummarizerAgent] 1/6: The application of collagen in advanced wound dres...
+2026-03-23 23:25:20.498 | DEBUG    | agents.summarizer_agent:run:54 - [SummarizerAgent] 2/6: Robust Image Segmentation in Low Depth Of Field Im...
+2026-03-23 23:25:21.597 | DEBUG    | agents.summarizer_agent:run:54 - [SummarizerAgent] 3/6: Image Segmentation in Foundation Model Era: A Surv...
+2026-03-23 23:25:22.676 | DEBUG    | agents.summarizer_agent:run:54 - [SummarizerAgent] 4/6: Wound Image Segmentation Method Based on Fuzzy Clu...
+2026-03-23 23:25:23.842 | DEBUG    | agents.summarizer_agent:run:54 - [SummarizerAgent] 5/6: Improved Skin Wound Image Segmentation Based on CE...
+2026-03-23 23:25:25.051 | DEBUG    | agents.summarizer_agent:run:54 - [SummarizerAgent] 6/6: Assessing the Trade-Off Between Model Behavior and...
+2026-03-23 23:25:25.605 | SUCCESS  | agents.summarizer_agent:run:61 - [SummarizerAgent] Done -- 6 summaries generated
+2026-03-23 23:25:25.606 | INFO     | agents.graph_state:invoke:164 - [Graph] ── Executing node: insight (step 4)
+2026-03-23 23:25:25.607 | INFO     | agents.insight_agent:run:67 - [InsightAgent] Extracting insights from 6 papers...
+2026-03-23 23:25:25.608 | DEBUG    | agents.insight_agent:run:70 - [InsightAgent] 1/6: The application of collagen in advanced wound dres...
+2026-03-23 23:25:26.478 | DEBUG    | agents.insight_agent:run:70 - [InsightAgent] 2/6: Robust Image Segmentation in Low Depth Of Field Im...
+2026-03-23 23:25:27.453 | DEBUG    | agents.insight_agent:run:70 - [InsightAgent] 3/6: Image Segmentation in Foundation Model Era: A Surv...
+2026-03-23 23:25:28.442 | DEBUG    | agents.insight_agent:run:70 - [InsightAgent] 4/6: Wound Image Segmentation Method Based on Fuzzy Clu...
+2026-03-23 23:25:29.430 | DEBUG    | agents.insight_agent:run:70 - [InsightAgent] 5/6: Improved Skin Wound Image Segmentation Based on CE...
+2026-03-23 23:25:30.359 | DEBUG    | agents.insight_agent:run:70 - [InsightAgent] 6/6: Assessing the Trade-Off Between Model Behavior and...
+2026-03-23 23:25:30.764 | SUCCESS  | agents.insight_agent:run:77 - [InsightAgent] Done -- insights extracted for 6 papers
+2026-03-23 23:25:30.765 | INFO     | agents.graph_state:invoke:164 - [Graph] ── Executing node: indexer (step 5)
+2026-03-23 23:25:30.768 | DEBUG    | services.text_chunker:chunk_paper:39 - [Chunker] 'The application of collagen in advanced ' → 4 chunks
+2026-03-23 23:25:30.768 | DEBUG    | services.text_chunker:chunk_paper:39 - [Chunker] 'Robust Image Segmentation in Low Depth O' → 4 chunks
+2026-03-23 23:25:30.769 | DEBUG    | services.text_chunker:chunk_paper:39 - [Chunker] 'Image Segmentation in Foundation Model E' → 5 chunks
+2026-03-23 23:25:30.770 | DEBUG    | services.text_chunker:chunk_paper:39 - [Chunker] 'Wound Image Segmentation Method Based on' → 4 chunks
+2026-03-23 23:25:30.771 | DEBUG    | services.text_chunker:chunk_paper:39 - [Chunker] 'Improved Skin Wound Image Segmentation B' → 4 chunks
+2026-03-23 23:25:30.771 | DEBUG    | services.text_chunker:chunk_paper:39 - [Chunker] 'Assessing the Trade-Off Between Model Be' → 5 chunks
+2026-03-23 23:25:30.772 | INFO     | services.text_chunker:chunk_papers:64 - [Chunker] Total chunks across 6 papers: 26
+2026-03-23 23:25:30.780 | INFO     | services.embedding_service:_local_embeddings:41 - [Embeddings] Loading local model: all-MiniLM-L6-v2
+2026-03-23 23:25:30.781 | INFO     | services.embedding_service:_local_embeddings:42 - [Embeddings] First run may download ~90 MB — please wait...
+2026-03-23 23:25:56.846 | SUCCESS  | services.embedding_service:_local_embeddings:49 - [Embeddings] Local embedding model ready ✓
+2026-03-23 23:25:56.867 | INFO     | services.vector_store:add_chunks_to_store:92 - [VectorStore] Adding 26 new chunks to ChromaDB...
+2026-03-23 23:26:02.151 | SUCCESS  | services.vector_store:add_chunks_to_store:94 - [VectorStore] ✓ Stored 26 chunks
+2026-03-23 23:26:02.152 | INFO     | agents.coordinator_agent:node_indexer:92 - [Indexer] 26 new chunks stored in ChromaDB
+2026-03-23 23:26:02.152 | INFO     | agents.graph_state:invoke:164 - [Graph] ── Executing node: comparison (step 6)
+2026-03-23 23:26:02.153 | INFO     | agents.comparison_agent:run:54 - [ComparisonAgent] Comparing 6 papers on 'Wound Image Segmentation'
+2026-03-23 23:26:05.078 | SUCCESS  | agents.comparison_agent:run:64 - [ComparisonAgent] Comparison generated
+2026-03-23 23:26:05.079 | INFO     | agents.graph_state:invoke:164 - [Graph] ── Executing node: writer (step 7)
+2026-03-23 23:26:05.080 | INFO     | agents.literature_agent:run:119 - [LiteratureAgent] Writing review for 'Wound Image Segmentation' (6 papers)...
+2026-03-23 23:26:06.082 | SUCCESS  | agents.literature_agent:_generate_table:178 - [LiteratureAgent] Comparison table generated
+2026-03-23 23:26:11.259 | SUCCESS  | agents.literature_agent:run:143 - [LiteratureAgent] Draft generated (9599 chars)
+2026-03-23 23:26:11.261 | INFO     | agents.graph_state:invoke:164 - [Graph] ── Executing node: reviewer (step 8)
+2026-03-23 23:26:11.262 | INFO     | agents.reviewer_agent:run:79 - [ReviewerAgent] Reviewing draft (9599 chars)...
+2026-03-23 23:26:12.026 | INFO     | agents.reviewer_agent:run:108 - [ReviewerAgent] Score: 5/10 | Passed: False
+2026-03-23 23:26:12.027 | DEBUG    | agents.graph_state:invoke:180 - [Graph] Conditional edge: reviewer → reviser (key=fail)
+2026-03-23 23:26:12.028 | INFO     | agents.graph_state:invoke:164 - [Graph] ── Executing node: reviser (step 9)
+2026-03-23 23:26:12.029 | INFO     | agents.reviser_agent:run:69 - [ReviserAgent] Revision #1 based on feedback...
+2026-03-23 23:26:15.758 | SUCCESS  | agents.reviser_agent:run:81 - [ReviserAgent] Revision #1 complete (8399 chars)
+2026-03-23 23:26:15.759 | INFO     | agents.graph_state:invoke:164 - [Graph] ── Executing node: writer (step 10)
+2026-03-23 23:26:15.759 | INFO     | agents.literature_agent:run:119 - [LiteratureAgent] Writing review for 'Wound Image Segmentation' (6 papers)...
+2026-03-23 23:26:16.638 | SUCCESS  | agents.literature_agent:_generate_table:178 - [LiteratureAgent] Comparison table generated
+2026-03-23 23:26:28.289 | SUCCESS  | agents.literature_agent:run:143 - [LiteratureAgent] Draft generated (8171 chars)
+2026-03-23 23:26:28.290 | INFO     | agents.graph_state:invoke:164 - [Graph] ── Executing node: reviewer (step 11)
+2026-03-23 23:26:28.291 | INFO     | agents.reviewer_agent:run:79 - [ReviewerAgent] Reviewing draft (8171 chars)...
+2026-03-23 23:26:36.298 | INFO     | agents.reviewer_agent:run:108 - [ReviewerAgent] Score: 6/10 | Passed: False
+2026-03-23 23:26:36.299 | DEBUG    | agents.graph_state:invoke:180 - [Graph] Conditional edge: reviewer → reviser (key=fail)
+2026-03-23 23:26:36.299 | INFO     | agents.graph_state:invoke:164 - [Graph] ── Executing node: reviser (step 12)
+2026-03-23 23:26:36.300 | INFO     | agents.reviser_agent:run:69 - [ReviserAgent] Revision #2 based on feedback...
+2026-03-23 23:26:46.781 | SUCCESS  | agents.reviser_agent:run:81 - [ReviserAgent] Revision #2 complete (7533 chars)
+2026-03-23 23:26:46.783 | INFO     | agents.graph_state:invoke:164 - [Graph] ── Executing node: writer (step 13)
+2026-03-23 23:26:46.783 | INFO     | agents.literature_agent:run:119 - [LiteratureAgent] Writing review for 'Wound Image Segmentation' (6 papers)...
+2026-03-23 23:26:52.055 | SUCCESS  | agents.literature_agent:_generate_table:178 - [LiteratureAgent] Comparison table generated
+2026-03-23 23:27:11.285 | SUCCESS  | agents.literature_agent:run:143 - [LiteratureAgent] Draft generated (9279 chars)
+2026-03-23 23:27:11.286 | INFO     | agents.graph_state:invoke:164 - [Graph] ── Executing node: reviewer (step 14)
+2026-03-23 23:27:11.288 | INFO     | agents.reviewer_agent:run:79 - [ReviewerAgent] Reviewing draft (9279 chars)...
+2026-03-23 23:27:19.162 | INFO     | agents.reviewer_agent:run:108 - [ReviewerAgent] Score: 5/10 | Passed: False
+2026-03-23 23:27:19.163 | WARNING  | agents.coordinator_agent:reviewer_decision:127 - [Graph] Max revisions (2) reached — publishing anyway
+2026-03-23 23:27:19.164 | DEBUG    | agents.graph_state:invoke:180 - [Graph] Conditional edge: reviewer → publisher (key=pass)
+2026-03-23 23:27:19.164 | INFO     | agents.graph_state:invoke:164 - [Graph] ── Executing node: publisher (step 15)
+2026-03-23 23:27:19.179 | SUCCESS  | agents.coordinator_agent:node_publisher:114 - [Publisher] Pipeline complete — review finalized
+2026-03-23 23:27:19.179 | INFO     | agents.graph_state:invoke:158 - [Graph] Reached END after 15 steps
+2026-03-23 23:27:19.180 | SUCCESS  | agents.coordinator_agent:run_full_pipeline:225 - [Coordinator] Graph complete. Nodes executed: planner → searcher → reader → insight → indexer → comparison → writer → reviewer → reviser → writer → reviewer → reviser → writer → reviewer → publisher. Revisions: 2.
+2026-03-23 23:31:47.479 | INFO     | routes.search_route:search_papers:60 - [Route /search] Topic: 'wound image segmentation'
+2026-03-23 23:31:47.483 | INFO     | agents.coordinator_agent:run_full_pipeline:197 - 
+============================================================
+2026-03-23 23:31:47.484 | INFO     | agents.coordinator_agent:run_full_pipeline:198 - [Coordinator] Compiling + invoking graph for: 'wound image segmentation'
+2026-03-23 23:31:47.485 | INFO     | agents.coordinator_agent:run_full_pipeline:199 - [Coordinator] Graph: planner → searcher → reader → insight → indexer → comparison → writer → reviewer → publisher
+2026-03-23 23:31:47.485 | INFO     | agents.coordinator_agent:run_full_pipeline:200 - ============================================================
+2026-03-23 23:31:47.516 | INFO     | services.llm_service:_get_groq_llm:62 - [LLM] Using Groq: llama-3.3-70b-versatile (temp=0.3)
+2026-03-23 23:31:47.666 | INFO     | services.llm_service:_get_groq_llm:62 - [LLM] Using Groq: llama-3.3-70b-versatile (temp=0.3)
+2026-03-23 23:31:47.701 | INFO     | services.llm_service:_get_groq_llm:62 - [LLM] Using Groq: llama-3.3-70b-versatile (temp=0.0)
+2026-03-23 23:31:47.723 | INFO     | services.llm_service:_get_groq_llm:62 - [LLM] Using Groq: llama-3.3-70b-versatile (temp=0.4)
+2026-03-23 23:31:47.746 | INFO     | services.llm_service:_get_groq_llm:62 - [LLM] Using Groq: llama-3.3-70b-versatile (temp=0.5)
+2026-03-23 23:31:47.771 | INFO     | services.llm_service:_get_groq_llm:62 - [LLM] Using Groq: llama-3.3-70b-versatile (temp=0.1)
+2026-03-23 23:31:47.797 | INFO     | services.llm_service:_get_groq_llm:62 - [LLM] Using Groq: llama-3.3-70b-versatile (temp=0.1)
+2026-03-23 23:31:47.822 | INFO     | services.llm_service:_get_groq_llm:62 - [LLM] Using Groq: llama-3.3-70b-versatile (temp=0.4)
+2026-03-23 23:31:47.848 | DEBUG    | agents.graph_state:add_node:124 - [Graph] Node registered: planner
+2026-03-23 23:31:47.848 | DEBUG    | agents.graph_state:add_node:124 - [Graph] Node registered: searcher
+2026-03-23 23:31:47.849 | DEBUG    | agents.graph_state:add_node:124 - [Graph] Node registered: reader
+2026-03-23 23:31:47.849 | DEBUG    | agents.graph_state:add_node:124 - [Graph] Node registered: insight
+2026-03-23 23:31:47.849 | DEBUG    | agents.graph_state:add_node:124 - [Graph] Node registered: indexer
+2026-03-23 23:31:47.849 | DEBUG    | agents.graph_state:add_node:124 - [Graph] Node registered: comparison
+2026-03-23 23:31:47.849 | DEBUG    | agents.graph_state:add_node:124 - [Graph] Node registered: writer
+2026-03-23 23:31:47.849 | DEBUG    | agents.graph_state:add_node:124 - [Graph] Node registered: reviewer
+2026-03-23 23:31:47.850 | DEBUG    | agents.graph_state:add_node:124 - [Graph] Node registered: reviser
+2026-03-23 23:31:47.850 | DEBUG    | agents.graph_state:add_node:124 - [Graph] Node registered: publisher
+2026-03-23 23:31:47.850 | INFO     | agents.graph_state:invoke:164 - [Graph] ── Executing node: planner (step 1)
+2026-03-23 23:31:47.850 | INFO     | agents.planner_agent:run:48 - [PlannerAgent] Decomposing topic: 'wound image segmentation'
+2026-03-23 23:31:48.605 | SUCCESS  | agents.planner_agent:run:64 - [PlannerAgent] Generated 5 sub-questions
+2026-03-23 23:31:48.605 | INFO     | agents.graph_state:invoke:164 - [Graph] ── Executing node: searcher (step 2)
+2026-03-23 23:31:48.605 | INFO     | agents.search_agent:run:42 - [SearchAgent] Starting search for: 'wound image segmentation'
+2026-03-23 23:31:48.605 | INFO     | services.arxiv_service:search_arxiv:33 - [arXiv] Searching for: 'wound image segmentation' (max 2 results)
+2026-03-23 23:31:50.710 | DEBUG    | services.arxiv_service:search_arxiv:59 - [arXiv] Found: The application of collagen in advanced wound dressings...
+2026-03-23 23:31:50.710 | DEBUG    | services.arxiv_service:search_arxiv:59 - [arXiv] Found: Robust Image Segmentation in Low Depth Of Field Images...
+2026-03-23 23:31:50.711 | SUCCESS  | services.arxiv_service:search_arxiv:61 - [arXiv] Retrieved 2 papers
+2026-03-23 23:31:50.714 | INFO     | services.semantic_scholar_service:search_semantic_scholar:36 - [SemanticScholar] Searching: 'wound image segmentation' (max 2)
+2026-03-23 23:31:52.289 | DEBUG    | services.semantic_scholar_service:search_semantic_scholar:86 - [SemanticScholar] Found: Wound Image Segmentation Method Based on Fuzzy Clustering Al...
+2026-03-23 23:31:52.289 | DEBUG    | services.semantic_scholar_service:search_semantic_scholar:86 - [SemanticScholar] Found: Improved Skin Wound Image Segmentation Based on CE-Net...
+2026-03-23 23:31:52.290 | SUCCESS  | services.semantic_scholar_service:search_semantic_scholar:88 - [SemanticScholar] Retrieved 2 papers
+2026-03-23 23:31:52.290 | SUCCESS  | agents.search_agent:run:53 - [SearchAgent] Found 4 unique papers (2 arXiv + 2 Scholar)
+2026-03-23 23:31:52.291 | INFO     | agents.graph_state:invoke:164 - [Graph] ── Executing node: reader (step 3)
+2026-03-23 23:31:52.291 | INFO     | agents.summarizer_agent:run:51 - [SummarizerAgent] Summarising 4 papers...
+2026-03-23 23:31:52.292 | DEBUG    | agents.summarizer_agent:run:54 - [SummarizerAgent] 1/4: The application of collagen in advanced wound dres...
+2026-03-23 23:31:53.808 | DEBUG    | agents.summarizer_agent:run:54 - [SummarizerAgent] 2/4: Robust Image Segmentation in Low Depth Of Field Im...
+2026-03-23 23:31:55.114 | DEBUG    | agents.summarizer_agent:run:54 - [SummarizerAgent] 3/4: Wound Image Segmentation Method Based on Fuzzy Clu...
+2026-03-23 23:31:56.425 | DEBUG    | agents.summarizer_agent:run:54 - [SummarizerAgent] 4/4: Improved Skin Wound Image Segmentation Based on CE...
+2026-03-23 23:31:57.112 | SUCCESS  | agents.summarizer_agent:run:61 - [SummarizerAgent] Done -- 4 summaries generated
+2026-03-23 23:31:57.113 | INFO     | agents.graph_state:invoke:164 - [Graph] ── Executing node: insight (step 4)
+2026-03-23 23:31:57.114 | INFO     | agents.insight_agent:run:67 - [InsightAgent] Extracting insights from 4 papers...
+2026-03-23 23:31:57.115 | DEBUG    | agents.insight_agent:run:70 - [InsightAgent] 1/4: The application of collagen in advanced wound dres...
+2026-03-23 23:31:58.130 | DEBUG    | agents.insight_agent:run:70 - [InsightAgent] 2/4: Robust Image Segmentation in Low Depth Of Field Im...
+2026-03-23 23:31:58.931 | DEBUG    | agents.insight_agent:run:70 - [InsightAgent] 3/4: Wound Image Segmentation Method Based on Fuzzy Clu...
+2026-03-23 23:32:00.133 | DEBUG    | agents.insight_agent:run:70 - [InsightAgent] 4/4: Improved Skin Wound Image Segmentation Based on CE...
+2026-03-23 23:32:00.654 | SUCCESS  | agents.insight_agent:run:77 - [InsightAgent] Done -- insights extracted for 4 papers
+2026-03-23 23:32:00.655 | INFO     | agents.graph_state:invoke:164 - [Graph] ── Executing node: indexer (step 5)
+2026-03-23 23:32:00.655 | DEBUG    | services.text_chunker:chunk_paper:39 - [Chunker] 'The application of collagen in advanced ' → 4 chunks
+2026-03-23 23:32:00.655 | DEBUG    | services.text_chunker:chunk_paper:39 - [Chunker] 'Robust Image Segmentation in Low Depth O' → 4 chunks
+2026-03-23 23:32:00.655 | DEBUG    | services.text_chunker:chunk_paper:39 - [Chunker] 'Wound Image Segmentation Method Based on' → 4 chunks
+2026-03-23 23:32:00.656 | DEBUG    | services.text_chunker:chunk_paper:39 - [Chunker] 'Improved Skin Wound Image Segmentation B' → 4 chunks
+2026-03-23 23:32:00.656 | INFO     | services.text_chunker:chunk_papers:64 - [Chunker] Total chunks across 4 papers: 16
+2026-03-23 23:32:00.659 | INFO     | services.embedding_service:_local_embeddings:41 - [Embeddings] Loading local model: all-MiniLM-L6-v2
+2026-03-23 23:32:00.659 | INFO     | services.embedding_service:_local_embeddings:42 - [Embeddings] First run may download ~90 MB — please wait...
+2026-03-23 23:32:11.163 | SUCCESS  | services.embedding_service:_local_embeddings:49 - [Embeddings] Local embedding model ready ✓
+2026-03-23 23:32:11.183 | INFO     | services.vector_store:add_chunks_to_store:89 - [VectorStore] All chunks already indexed — nothing new to add.
+2026-03-23 23:32:11.183 | INFO     | agents.coordinator_agent:node_indexer:92 - [Indexer] 0 new chunks stored in ChromaDB
+2026-03-23 23:32:11.183 | INFO     | agents.graph_state:invoke:164 - [Graph] ── Executing node: comparison (step 6)
+2026-03-23 23:32:11.184 | INFO     | agents.comparison_agent:run:54 - [ComparisonAgent] Comparing 4 papers on 'wound image segmentation'
+2026-03-23 23:32:13.468 | SUCCESS  | agents.comparison_agent:run:64 - [ComparisonAgent] Comparison generated
+2026-03-23 23:32:13.468 | INFO     | agents.graph_state:invoke:164 - [Graph] ── Executing node: writer (step 7)
+2026-03-23 23:32:13.469 | INFO     | agents.literature_agent:run:119 - [LiteratureAgent] Writing review for 'wound image segmentation' (4 papers)...
+2026-03-23 23:32:14.369 | SUCCESS  | agents.literature_agent:_generate_table:178 - [LiteratureAgent] Comparison table generated
+2026-03-23 23:32:18.227 | SUCCESS  | agents.literature_agent:run:143 - [LiteratureAgent] Draft generated (8679 chars)
+2026-03-23 23:32:18.227 | INFO     | agents.graph_state:invoke:164 - [Graph] ── Executing node: reviewer (step 8)
+2026-03-23 23:32:18.228 | INFO     | agents.reviewer_agent:run:79 - [ReviewerAgent] Reviewing draft (8679 chars)...
+2026-03-23 23:32:19.465 | INFO     | agents.reviewer_agent:run:108 - [ReviewerAgent] Score: 5/10 | Passed: False
+2026-03-23 23:32:19.466 | DEBUG    | agents.graph_state:invoke:180 - [Graph] Conditional edge: reviewer → reviser (key=fail)
+2026-03-23 23:32:19.466 | INFO     | agents.graph_state:invoke:164 - [Graph] ── Executing node: reviser (step 9)
+2026-03-23 23:32:19.466 | INFO     | agents.reviser_agent:run:69 - [ReviserAgent] Revision #1 based on feedback...
+2026-03-23 23:32:23.267 | SUCCESS  | agents.reviser_agent:run:81 - [ReviserAgent] Revision #1 complete (7871 chars)
+2026-03-23 23:32:23.268 | INFO     | agents.graph_state:invoke:164 - [Graph] ── Executing node: writer (step 10)
+2026-03-23 23:32:23.269 | INFO     | agents.literature_agent:run:119 - [LiteratureAgent] Writing review for 'wound image segmentation' (4 papers)...
+2026-03-23 23:32:24.076 | SUCCESS  | agents.literature_agent:_generate_table:178 - [LiteratureAgent] Comparison table generated
+2026-03-23 23:32:31.677 | SUCCESS  | agents.literature_agent:run:143 - [LiteratureAgent] Draft generated (8388 chars)
+2026-03-23 23:32:31.678 | INFO     | agents.graph_state:invoke:164 - [Graph] ── Executing node: reviewer (step 11)
+2026-03-23 23:32:31.679 | INFO     | agents.reviewer_agent:run:79 - [ReviewerAgent] Reviewing draft (8388 chars)...
+2026-03-23 23:32:40.870 | INFO     | agents.reviewer_agent:run:108 - [ReviewerAgent] Score: 5/10 | Passed: False
+2026-03-23 23:32:40.871 | DEBUG    | agents.graph_state:invoke:180 - [Graph] Conditional edge: reviewer → reviser (key=fail)
+2026-03-23 23:32:40.871 | INFO     | agents.graph_state:invoke:164 - [Graph] ── Executing node: reviser (step 12)
+2026-03-23 23:32:40.871 | INFO     | agents.reviser_agent:run:69 - [ReviserAgent] Revision #2 based on feedback...
+2026-03-23 23:32:49.707 | SUCCESS  | agents.reviser_agent:run:81 - [ReviserAgent] Revision #2 complete (6659 chars)
+2026-03-23 23:32:49.707 | INFO     | agents.graph_state:invoke:164 - [Graph] ── Executing node: writer (step 13)
+2026-03-23 23:32:49.708 | INFO     | agents.literature_agent:run:119 - [LiteratureAgent] Writing review for 'wound image segmentation' (4 papers)...
+2026-03-23 23:32:55.489 | SUCCESS  | agents.literature_agent:_generate_table:178 - [LiteratureAgent] Comparison table generated
+2026-03-23 23:33:10.765 | SUCCESS  | agents.literature_agent:run:143 - [LiteratureAgent] Draft generated (9561 chars)
+2026-03-23 23:33:10.765 | INFO     | agents.graph_state:invoke:164 - [Graph] ── Executing node: reviewer (step 14)
+2026-03-23 23:33:10.765 | INFO     | agents.reviewer_agent:run:79 - [ReviewerAgent] Reviewing draft (9561 chars)...
+2026-03-23 23:33:19.824 | INFO     | agents.reviewer_agent:run:108 - [ReviewerAgent] Score: 5/10 | Passed: False
+2026-03-23 23:33:19.826 | WARNING  | agents.coordinator_agent:reviewer_decision:127 - [Graph] Max revisions (2) reached — publishing anyway
+2026-03-23 23:33:19.827 | DEBUG    | agents.graph_state:invoke:180 - [Graph] Conditional edge: reviewer → publisher (key=pass)
+2026-03-23 23:33:19.828 | INFO     | agents.graph_state:invoke:164 - [Graph] ── Executing node: publisher (step 15)
+2026-03-23 23:33:19.844 | SUCCESS  | agents.coordinator_agent:node_publisher:114 - [Publisher] Pipeline complete — review finalized
+2026-03-23 23:33:19.845 | INFO     | agents.graph_state:invoke:158 - [Graph] Reached END after 15 steps
+2026-03-23 23:33:19.845 | SUCCESS  | agents.coordinator_agent:run_full_pipeline:225 - [Coordinator] Graph complete. Nodes executed: planner → searcher → reader → insight → indexer → comparison → writer → reviewer → reviser → writer → reviewer → reviser → writer → reviewer → publisher. Revisions: 2.
+2026-03-23 23:40:47.841 | INFO     | routes.search_route:search_papers:60 - [Route /search] Topic: 'Wound Image Segmentation'
+2026-03-23 23:40:47.842 | INFO     | agents.coordinator_agent:run_full_pipeline:197 - 
+============================================================
+2026-03-23 23:40:47.843 | INFO     | agents.coordinator_agent:run_full_pipeline:198 - [Coordinator] Compiling + invoking graph for: 'Wound Image Segmentation'
+2026-03-23 23:40:47.843 | INFO     | agents.coordinator_agent:run_full_pipeline:199 - [Coordinator] Graph: planner → searcher → reader → insight → indexer → comparison → writer → reviewer → publisher
+2026-03-23 23:40:47.845 | INFO     | agents.coordinator_agent:run_full_pipeline:200 - ============================================================
+2026-03-23 23:40:47.883 | INFO     | services.llm_service:_get_groq_llm:62 - [LLM] Using Groq: llama-3.3-70b-versatile (temp=0.3)
+2026-03-23 23:40:48.104 | INFO     | services.llm_service:_get_groq_llm:62 - [LLM] Using Groq: llama-3.3-70b-versatile (temp=0.3)
+2026-03-23 23:40:48.131 | INFO     | services.llm_service:_get_groq_llm:62 - [LLM] Using Groq: llama-3.3-70b-versatile (temp=0.0)
+2026-03-23 23:40:48.158 | INFO     | services.llm_service:_get_groq_llm:62 - [LLM] Using Groq: llama-3.3-70b-versatile (temp=0.4)
+2026-03-23 23:40:48.183 | INFO     | services.llm_service:_get_groq_llm:62 - [LLM] Using Groq: llama-3.3-70b-versatile (temp=0.5)
+2026-03-23 23:40:48.213 | INFO     | services.llm_service:_get_groq_llm:62 - [LLM] Using Groq: llama-3.3-70b-versatile (temp=0.1)
+2026-03-23 23:40:48.256 | INFO     | services.llm_service:_get_groq_llm:62 - [LLM] Using Groq: llama-3.3-70b-versatile (temp=0.1)
+2026-03-23 23:40:48.291 | INFO     | services.llm_service:_get_groq_llm:62 - [LLM] Using Groq: llama-3.3-70b-versatile (temp=0.4)
+2026-03-23 23:40:48.333 | DEBUG    | agents.graph_state:add_node:124 - [Graph] Node registered: planner
+2026-03-23 23:40:48.334 | DEBUG    | agents.graph_state:add_node:124 - [Graph] Node registered: searcher
+2026-03-23 23:40:48.334 | DEBUG    | agents.graph_state:add_node:124 - [Graph] Node registered: reader
+2026-03-23 23:40:48.334 | DEBUG    | agents.graph_state:add_node:124 - [Graph] Node registered: insight
+2026-03-23 23:40:48.334 | DEBUG    | agents.graph_state:add_node:124 - [Graph] Node registered: indexer
+2026-03-23 23:40:48.335 | DEBUG    | agents.graph_state:add_node:124 - [Graph] Node registered: comparison
+2026-03-23 23:40:48.335 | DEBUG    | agents.graph_state:add_node:124 - [Graph] Node registered: writer
+2026-03-23 23:40:48.335 | DEBUG    | agents.graph_state:add_node:124 - [Graph] Node registered: reviewer
+2026-03-23 23:40:48.335 | DEBUG    | agents.graph_state:add_node:124 - [Graph] Node registered: reviser
+2026-03-23 23:40:48.335 | DEBUG    | agents.graph_state:add_node:124 - [Graph] Node registered: publisher
+2026-03-23 23:40:48.336 | INFO     | agents.graph_state:invoke:164 - [Graph] ── Executing node: planner (step 1)
+2026-03-23 23:40:48.336 | INFO     | agents.planner_agent:run:48 - [PlannerAgent] Decomposing topic: 'Wound Image Segmentation'
+2026-03-23 23:40:49.091 | SUCCESS  | agents.planner_agent:run:64 - [PlannerAgent] Generated 5 sub-questions
+2026-03-23 23:40:49.091 | INFO     | agents.graph_state:invoke:164 - [Graph] ── Executing node: searcher (step 2)
+2026-03-23 23:40:49.091 | INFO     | agents.search_agent:run:42 - [SearchAgent] Starting search for: 'Wound Image Segmentation'
+2026-03-23 23:40:49.091 | INFO     | services.arxiv_service:search_arxiv:33 - [arXiv] Searching for: 'Wound Image Segmentation' (max 2 results)
+2026-03-23 23:40:49.736 | DEBUG    | services.arxiv_service:search_arxiv:59 - [arXiv] Found: The application of collagen in advanced wound dressings...
+2026-03-23 23:40:49.736 | DEBUG    | services.arxiv_service:search_arxiv:59 - [arXiv] Found: Robust Image Segmentation in Low Depth Of Field Images...
+2026-03-23 23:40:49.736 | SUCCESS  | services.arxiv_service:search_arxiv:61 - [arXiv] Retrieved 2 papers
+2026-03-23 23:40:49.738 | INFO     | services.semantic_scholar_service:search_semantic_scholar:36 - [SemanticScholar] Searching: 'Wound Image Segmentation' (max 2)
+2026-03-23 23:40:51.268 | DEBUG    | services.semantic_scholar_service:search_semantic_scholar:86 - [SemanticScholar] Found: Wound Image Segmentation Method Based on Fuzzy Clustering Al...
+2026-03-23 23:40:51.269 | DEBUG    | services.semantic_scholar_service:search_semantic_scholar:86 - [SemanticScholar] Found: Improved Skin Wound Image Segmentation Based on CE-Net...
+2026-03-23 23:40:51.269 | SUCCESS  | services.semantic_scholar_service:search_semantic_scholar:88 - [SemanticScholar] Retrieved 2 papers
+2026-03-23 23:40:51.269 | SUCCESS  | agents.search_agent:run:53 - [SearchAgent] Found 4 unique papers (2 arXiv + 2 Scholar)
+2026-03-23 23:40:51.270 | INFO     | agents.graph_state:invoke:164 - [Graph] ── Executing node: reader (step 3)
+2026-03-23 23:40:51.270 | INFO     | agents.summarizer_agent:run:51 - [SummarizerAgent] Summarising 4 papers...
+2026-03-23 23:40:51.270 | DEBUG    | agents.summarizer_agent:run:54 - [SummarizerAgent] 1/4: The application of collagen in advanced wound dres...
+2026-03-23 23:40:52.322 | DEBUG    | agents.summarizer_agent:run:54 - [SummarizerAgent] 2/4: Robust Image Segmentation in Low Depth Of Field Im...
+2026-03-23 23:40:53.368 | DEBUG    | agents.summarizer_agent:run:54 - [SummarizerAgent] 3/4: Wound Image Segmentation Method Based on Fuzzy Clu...
+2026-03-23 23:40:54.427 | DEBUG    | agents.summarizer_agent:run:54 - [SummarizerAgent] 4/4: Improved Skin Wound Image Segmentation Based on CE...
+2026-03-23 23:40:55.309 | SUCCESS  | agents.summarizer_agent:run:61 - [SummarizerAgent] Done -- 4 summaries generated
+2026-03-23 23:40:55.311 | INFO     | agents.graph_state:invoke:164 - [Graph] ── Executing node: insight (step 4)
+2026-03-23 23:40:55.311 | INFO     | agents.insight_agent:run:67 - [InsightAgent] Extracting insights from 4 papers...
+2026-03-23 23:40:55.311 | DEBUG    | agents.insight_agent:run:70 - [InsightAgent] 1/4: The application of collagen in advanced wound dres...
+2026-03-23 23:40:56.225 | DEBUG    | agents.insight_agent:run:70 - [InsightAgent] 2/4: Robust Image Segmentation in Low Depth Of Field Im...
+2026-03-23 23:40:57.163 | DEBUG    | agents.insight_agent:run:70 - [InsightAgent] 3/4: Wound Image Segmentation Method Based on Fuzzy Clu...
+2026-03-23 23:40:58.280 | DEBUG    | agents.insight_agent:run:70 - [InsightAgent] 4/4: Improved Skin Wound Image Segmentation Based on CE...
+2026-03-23 23:40:58.672 | SUCCESS  | agents.insight_agent:run:77 - [InsightAgent] Done -- insights extracted for 4 papers
+2026-03-23 23:40:58.674 | INFO     | agents.graph_state:invoke:164 - [Graph] ── Executing node: indexer (step 5)
+2026-03-23 23:40:58.674 | DEBUG    | services.text_chunker:chunk_paper:39 - [Chunker] 'The application of collagen in advanced ' → 4 chunks
+2026-03-23 23:40:58.674 | DEBUG    | services.text_chunker:chunk_paper:39 - [Chunker] 'Robust Image Segmentation in Low Depth O' → 4 chunks
+2026-03-23 23:40:58.675 | DEBUG    | services.text_chunker:chunk_paper:39 - [Chunker] 'Wound Image Segmentation Method Based on' → 4 chunks
+2026-03-23 23:40:58.675 | DEBUG    | services.text_chunker:chunk_paper:39 - [Chunker] 'Improved Skin Wound Image Segmentation B' → 4 chunks
+2026-03-23 23:40:58.675 | INFO     | services.text_chunker:chunk_papers:64 - [Chunker] Total chunks across 4 papers: 16
+2026-03-23 23:40:58.678 | INFO     | services.embedding_service:_local_embeddings:41 - [Embeddings] Loading local model: all-MiniLM-L6-v2
+2026-03-23 23:40:58.678 | INFO     | services.embedding_service:_local_embeddings:42 - [Embeddings] First run may download ~90 MB — please wait...
+2026-03-23 23:41:11.428 | SUCCESS  | services.embedding_service:_local_embeddings:49 - [Embeddings] Local embedding model ready ✓
+2026-03-23 23:41:11.444 | INFO     | services.vector_store:add_chunks_to_store:89 - [VectorStore] All chunks already indexed — nothing new to add.
+2026-03-23 23:41:11.444 | INFO     | agents.coordinator_agent:node_indexer:92 - [Indexer] 0 new chunks stored in ChromaDB
+2026-03-23 23:41:11.444 | INFO     | agents.graph_state:invoke:164 - [Graph] ── Executing node: comparison (step 6)
+2026-03-23 23:41:11.444 | INFO     | agents.comparison_agent:run:54 - [ComparisonAgent] Comparing 4 papers on 'Wound Image Segmentation'
+2026-03-23 23:41:13.670 | SUCCESS  | agents.comparison_agent:run:64 - [ComparisonAgent] Comparison generated
+2026-03-23 23:41:13.671 | INFO     | agents.graph_state:invoke:164 - [Graph] ── Executing node: writer (step 7)
+2026-03-23 23:41:13.671 | INFO     | agents.literature_agent:run:119 - [LiteratureAgent] Writing review for 'Wound Image Segmentation' (4 papers)...
+2026-03-23 23:41:14.264 | SUCCESS  | agents.literature_agent:_generate_table:178 - [LiteratureAgent] Comparison table generated
+2026-03-23 23:41:18.942 | SUCCESS  | agents.literature_agent:run:143 - [LiteratureAgent] Draft generated (8314 chars)
+2026-03-23 23:41:18.942 | INFO     | agents.graph_state:invoke:164 - [Graph] ── Executing node: reviewer (step 8)
+2026-03-23 23:41:18.942 | INFO     | agents.reviewer_agent:run:79 - [ReviewerAgent] Reviewing draft (8314 chars)...
+2026-03-23 23:41:19.834 | INFO     | agents.reviewer_agent:run:108 - [ReviewerAgent] Score: 5/10 | Passed: False
+2026-03-23 23:41:19.834 | DEBUG    | agents.graph_state:invoke:180 - [Graph] Conditional edge: reviewer → reviser (key=fail)
+2026-03-23 23:41:19.835 | INFO     | agents.graph_state:invoke:164 - [Graph] ── Executing node: reviser (step 9)
+2026-03-23 23:41:19.835 | INFO     | agents.reviser_agent:run:69 - [ReviserAgent] Revision #1 based on feedback...
+2026-03-23 23:41:22.910 | SUCCESS  | agents.reviser_agent:run:81 - [ReviserAgent] Revision #1 complete (7681 chars)
+2026-03-23 23:41:22.911 | INFO     | agents.graph_state:invoke:164 - [Graph] ── Executing node: writer (step 10)
+2026-03-23 23:41:22.911 | INFO     | agents.literature_agent:run:119 - [LiteratureAgent] Writing review for 'Wound Image Segmentation' (4 papers)...
+2026-03-23 23:41:23.636 | SUCCESS  | agents.literature_agent:_generate_table:178 - [LiteratureAgent] Comparison table generated
+2026-03-23 23:41:28.709 | SUCCESS  | agents.literature_agent:run:143 - [LiteratureAgent] Draft generated (8414 chars)
+2026-03-23 23:41:28.709 | INFO     | agents.graph_state:invoke:164 - [Graph] ── Executing node: reviewer (step 11)
+2026-03-23 23:41:28.710 | INFO     | agents.reviewer_agent:run:79 - [ReviewerAgent] Reviewing draft (8414 chars)...
+2026-03-23 23:41:36.807 | INFO     | agents.reviewer_agent:run:108 - [ReviewerAgent] Score: 5/10 | Passed: False
+2026-03-23 23:41:36.808 | DEBUG    | agents.graph_state:invoke:180 - [Graph] Conditional edge: reviewer → reviser (key=fail)
+2026-03-23 23:41:36.808 | INFO     | agents.graph_state:invoke:164 - [Graph] ── Executing node: reviser (step 12)
+2026-03-23 23:41:36.809 | INFO     | agents.reviser_agent:run:69 - [ReviserAgent] Revision #2 based on feedback...
+2026-03-23 23:41:46.611 | SUCCESS  | agents.reviser_agent:run:81 - [ReviserAgent] Revision #2 complete (8621 chars)
+2026-03-23 23:41:46.612 | INFO     | agents.graph_state:invoke:164 - [Graph] ── Executing node: writer (step 13)
+2026-03-23 23:41:46.612 | INFO     | agents.literature_agent:run:119 - [LiteratureAgent] Writing review for 'Wound Image Segmentation' (4 papers)...
+2026-03-23 23:41:52.566 | SUCCESS  | agents.literature_agent:_generate_table:178 - [LiteratureAgent] Comparison table generated
+2026-03-23 23:42:08.161 | SUCCESS  | agents.literature_agent:run:143 - [LiteratureAgent] Draft generated (8768 chars)
+2026-03-23 23:42:08.161 | INFO     | agents.graph_state:invoke:164 - [Graph] ── Executing node: reviewer (step 14)
+2026-03-23 23:42:08.162 | INFO     | agents.reviewer_agent:run:79 - [ReviewerAgent] Reviewing draft (8768 chars)...
+2026-03-23 23:42:16.184 | INFO     | agents.reviewer_agent:run:108 - [ReviewerAgent] Score: 6/10 | Passed: False
+2026-03-23 23:42:16.184 | WARNING  | agents.coordinator_agent:reviewer_decision:127 - [Graph] Max revisions (2) reached — publishing anyway
+2026-03-23 23:42:16.186 | DEBUG    | agents.graph_state:invoke:180 - [Graph] Conditional edge: reviewer → publisher (key=pass)
+2026-03-23 23:42:16.186 | INFO     | agents.graph_state:invoke:164 - [Graph] ── Executing node: publisher (step 15)
+2026-03-23 23:42:16.192 | SUCCESS  | agents.coordinator_agent:node_publisher:114 - [Publisher] Pipeline complete — review finalized
+2026-03-23 23:42:16.192 | INFO     | agents.graph_state:invoke:158 - [Graph] Reached END after 15 steps
+2026-03-23 23:42:16.192 | SUCCESS  | agents.coordinator_agent:run_full_pipeline:225 - [Coordinator] Graph complete. Nodes executed: planner → searcher → reader → insight → indexer → comparison → writer → reviewer → reviser → writer → reviewer → reviser → writer → reviewer → publisher. Revisions: 2.
